@@ -11,33 +11,21 @@
         android:id="@+id/index"
         android:name="com.s59161126.emergencys.index"
         android:label="index">
-        <action
-            android:id="@+id/action_index_to_addinfo"
-            app:destination="@id/addinfo" />
-        <action
-            android:id="@+id/action_index_to_assistant"
-            app:destination="@id/assistant" />
         <argument
             android:name="TxtName"
             app:argType="string" />
-    </fragment>
-    <fragment
-        android:id="@+id/addinfo"
-        android:name="com.s59161126.emergencys.addinfo"
-        android:label="addinfo">
         <action
-            android:id="@+id/action_addinfo_to_index"
-            app:destination="@id/index"
-            app:popUpTo="@+id/index" />
-    </fragment>
-    <fragment
-        android:id="@+id/assistant"
-        android:name="com.s59161126.emergencys.assistant"
-        android:label="assistant" >
+            android:id="@+id/action_index_to_vid1"
+            app:destination="@id/vid1" />
         <action
-            android:id="@+id/action_assistant_to_index"
-            app:destination="@id/index"
-            app:popUpTo="@+id/index" />
+            android:id="@+id/action_index_to_vid2"
+            app:destination="@id/vid2" />
+        <action
+            android:id="@+id/action_index_to_vid3"
+            app:destination="@id/vid3" />
+        <action
+            android:id="@+id/action_index_to_vid4"
+            app:destination="@id/vid4" />
     </fragment>
     <fragment
         android:id="@+id/about"
@@ -54,6 +42,38 @@
         android:label="start">
         <action
             android:id="@+id/action_start2_to_index"
+            app:destination="@id/index" />
+    </fragment>
+    <fragment
+        android:id="@+id/vid1"
+        android:name="com.s59161126.emergencys.vid1"
+        android:label="vid1" >
+        <action
+            android:id="@+id/action_vid1_to_index"
+            app:destination="@id/index" />
+    </fragment>
+    <fragment
+        android:id="@+id/vid2"
+        android:name="com.s59161126.emergencys.vid2"
+        android:label="vid2" >
+        <action
+            android:id="@+id/action_vid2_to_index"
+            app:destination="@id/index" />
+    </fragment>
+    <fragment
+        android:id="@+id/vid3"
+        android:name="com.s59161126.emergencys.vid3"
+        android:label="vid3" >
+        <action
+            android:id="@+id/action_vid3_to_index"
+            app:destination="@id/index" />
+    </fragment>
+    <fragment
+        android:id="@+id/vid4"
+        android:name="com.s59161126.emergencys.vid4"
+        android:label="vid4" >
+        <action
+            android:id="@+id/action_vid4_to_index"
             app:destination="@id/index" />
     </fragment>
 </navigation>

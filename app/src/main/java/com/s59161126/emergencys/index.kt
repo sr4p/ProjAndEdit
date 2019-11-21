@@ -21,19 +21,25 @@ class index : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentIndexBinding>(inflater,R.layout.fragment_index,container,false)
         binding.b1.setOnClickListener { view : View ->
-            view.findNavController().navigate(R.id.action_index_to_addinfo)
-
-
-
+            view.findNavController().navigate(R.id.action_index_to_vid1)
         }
 
-//        binding.helpbutton.setOnClickListener { view : View ->
-//            view.findNavController().navigate(R.id.action_index_to_assistant)
-//        }
+        binding.b2.setOnClickListener { view : View ->
+            view.findNavController().navigate(R.id.action_index_to_vid2)
+        }
+
+        binding.b3.setOnClickListener { view : View ->
+            view.findNavController().navigate(R.id.action_index_to_vid3)
+        }
+
+        binding.b4.setOnClickListener { view : View ->
+            view.findNavController().navigate(R.id.action_index_to_vid4)
+        }
+
 
         val args = indexArgs.fromBundle(arguments!!)
         binding.nameTime.setText(args.txtName)
-        val gg = binding.nameTime.setText(args.txtName)
+//        val gg = binding.nameTime.setText(args.txtName)
         Toast.makeText(context,"Hello ${args.txtName}", Toast.LENGTH_LONG).show()
 
         setHasOptionsMenu(true)
