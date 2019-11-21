@@ -1,0 +1,30 @@
+<resources>
+
+
+    <string name="block_one">เป็นลม</string>
+    <string name="block_two">เลือดกำดาวไหล</string>
+    <string name="block_three">CPR</string>
+    <string name="block_four">อาหารติดคอ</string>
+
+    <string name="medical_one">การปฐมพยาบาล เป็นลม</string>
+    <string name="medical_two">การปฐมพยาบาล เลือดกำดาวไหล</string>
+    <string name="medical_three">การปฐมพยาบาล ทำ CPR</string>
+    <string name="medical_four">การปฐมพยาบาล อาหารติดคอ</string>
+
+    <string name="block_play">PLAY</string>
+    <string name="block_back">BACK</string>
+
+
+    <string name="app_name">Emergencys</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_but">ADD</string>
+    <string name="title_activity_map_emergency">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="name_user">TextViewName</string>
+    <string name="name_your">What is your name ?</string>
+    <string name="about">about</string>
+    <string name="button">Button</string>
+</resources>

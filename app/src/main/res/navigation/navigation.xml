@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/start2"
+    app:argType = "string">
+
+
+    <fragment
+        android:id="@+id/index"
+        android:name="com.s59161126.emergencys.index"
+        android:label="index">
+        <action
+            android:id="@+id/action_index_to_addinfo"
+            app:destination="@id/addinfo" />
+        <action
+            android:id="@+id/action_index_to_assistant"
+            app:destination="@id/assistant" />
+        <argument
+            android:name="TxtName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addinfo"
+        android:name="com.s59161126.emergencys.addinfo"
+        android:label="addinfo">
+        <action
+            android:id="@+id/action_addinfo_to_index"
+            app:destination="@id/index"
+            app:popUpTo="@+id/index" />
+    </fragment>
+    <fragment
+        android:id="@+id/assistant"
+        android:name="com.s59161126.emergencys.assistant"
+        android:label="assistant" >
+        <action
+            android:id="@+id/action_assistant_to_index"
+            app:destination="@id/index"
+            app:popUpTo="@+id/index" />
+    </fragment>
+    <fragment
+        android:id="@+id/about"
+        android:name="com.s59161126.emergencys.about"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_about_to_index"
+            app:destination="@id/index" />
+    </fragment>
+    <fragment
+        android:id="@+id/start2"
+        android:name="com.s59161126.emergencys.start"
+        android:label="start">
+        <action
+            android:id="@+id/action_start2_to_index"
+            app:destination="@id/index" />
+    </fragment>
+</navigation>
